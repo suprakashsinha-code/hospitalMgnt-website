@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elizacare - Hospital Booking</title>
+    <link rel="stylesheet" href="style12.css">
+    <!-- Font Import -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Floating Navbar -->
+    <header class="navbar">
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text">Elizacare</span>
+            </div>
+            
+            <nav class="nav-links desktop-nav">
+                <a href="#" class="active">Home</a>
+                <a href="#">About us</a>
+                <div class="dropdown">
+                    <span>Services</span>
+                    <i data-lucide="chevron-down"></i>
+                </div>
+                <div class="dropdown">
+                    <span>Doctors</span>
+                    <i data-lucide="chevron-down"></i>
+                </div>
+                <a href="#">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <div class="lang-selector">
+                    <img src="https://flagcdn.com/w20/gb.png" alt="UK Flag">
+                    <i data-lucide="chevron-down" class="hide-mobile"></i>
+                </div>
+                <button class="btn-primary hide-mobile">
+                    Get Started <i data-lucide="chevron-right"></i>
+                </button>
+                <!-- Mobile Toggle -->
+                <button class="mobile-menu-toggle" id="menuToggle">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Side Bar for Mobile -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text">Elizacare</span>
+            </div>
+            <button class="close-sidebar" id="closeSidebar">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="#" class="active">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Services</a>
+            <a href="#">Doctors</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="sidebar-footer">
+            <button class="btn-primary w-full">
+                Get Started <i data-lucide="chevron-right"></i>
+            </button>
+        </div>
+    </aside>
+
+    <main class="hero">
+        <div class="container hero-content">
+            <h1 class="hero-title">Seamless Hospital Booking <br class="hide-mobile"> for Your Health Needs</h1>
+            <p class="hero-subtitle">
+                Book appointments easily with top hospitals and trusted doctors.<br class="hide-mobile">
+                Get fast access to medical services and expert care.
+            </p>
+
+            <div class="hero-image-container">
+                <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1600" alt="Medical Team" class="hero-bg-image">
+                
+                <div class="feature-cards">
+                    <!-- Doctor Schedule Card (Blue) -->
+                    <div class="card card-blue">
+                        <div class="card-icon">
+                            <i data-lucide="calendar"></i>
+                        </div>
+                        <h3>Doctor Schedule</h3>
+                        <p>Find and schedule appointments with top doctors at your preferred hospital.</p>
+                        <div class="cursor-pointer">
+                            <i data-lucide="mouse-pointer-2"></i>
+                        </div>
+                    </div>
+
+                    <!-- Room Info Card -->
+                    <div class="card card-white">
+                        <div class="card-icon blue-text">
+                            <i data-lucide="hospital"></i>
+                        </div>
+                        <h3>Room Info</h3>
+                        <p>Immediate access to emergency care. Find the nearest hospital and get urgent help.</p>
+                    </div>
+
+                    <!-- Online Registration Card -->
+                    <div class="card card-white">
+                        <div class="card-icon blue-text">
+                            <i data-lucide="smartphone"></i>
+                        </div>
+                        <h3>Online Registration</h3>
+                        <p>Find and schedule appointments with top doctors at your preferred hospital.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-tag">
+                <span class="dot"></span>
+                About Us
+            </div>
+        </div>
+        <!-- Background Decorative Elements -->
+    <div class="liquid-blob blob-1"></div>
+    <div class="liquid-blob blob-2"></div>
+
+    <div class="hero-wrapper">
+        <div class="container-custom">
+
+
+            <!-- Headline -->
+            <h1 class="hero-headline">
+                <span class="highlight">We provide exceptional care with a patient-first approach,</span>
+                <span class="muted">advanced facilities, and expert doctors for high-quality treatments.</span>
+            </h1>
+
+            <!-- Phone Gallery Section -->
+            <div class="phones-container">
+                <!-- Left Phone -->
+                <div class="phone phone-left">
+                    <div class="phone-bezel">
+                        <div class="phone-screen">
+                            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=500" alt="Interface">
+                            <div class="phone-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Center Phone -->
+                <div class="phone phone-center">
+                    <div class="phone-bezel">
+                        <div class="dynamic-island"></div>
+                        <div class="phone-screen">
+                            <div class="phone-inner">
+                                <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=500" alt="Doctor">
+                                <div class="inner-overlay"></div>
+                                <div class="inner-content">
+                                    <p>Need a Doctor? <br> Book now without queuing</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Phone -->
+                <div class="phone phone-right">
+                    <div class="phone-bezel">
+                        <div class="phone-screen">
+                            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=500" alt="Clinic">
+                            <div class="phone-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="stats-grid liquid-glass">
+                <div class="stat-item">
+                    <div class="stat-icon"><i data-lucide="building-2"></i></div>
+                    <div class="stat-number">41+</div>
+                    <div class="stat-label">Our Hospitals</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i data-lucide="users"></i></div>
+                    <div class="stat-number">12.5K +</div>
+                    <div class="stat-label">Medical Personnel</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i data-lucide="heart-pulse"></i></div>
+                    <div class="stat-number">8.76M +</div>
+                    <div class="stat-label">Patients Served</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i data-lucide="shield-check"></i></div>
+                    <div class="stat-number">400 +</div>
+                    <div class="stat-label">Insurance Partners</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </main>
+
+    <script src="script12.js"></script>
+</body>
+</html>
