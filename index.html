@@ -301,8 +301,138 @@
             <div class="progress-bar"></div>
         </div>
     </section>
-    </main>
+     <!-- Testimonials Section -->
+    <section class="hero-testimonials">
+        <div class="blob-bg"></div>
+        <div class="container">
+            <div class="badge-wrapper">
+                <span class="badge"><span class="dot"></span> Testimonials</span>
+            </div>
+            <h1 class="main-title">Patient Trust, <br><span>Our Priority</span></h1>
+            <p class="section-desc">We are proud to have helped thousands of patients from various countries get the best medical services with modern technology.</p>
 
+            <div class="cards-container">
+                <div class="testimonial-card glass">
+                    <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=200&q=80" alt="Aiko">
+                    <div class="card-text">
+                        <div class="user">🇯🇵 <strong>Aiko, Japan</strong></div>
+                        <p>"ElizaCare helped me find the best specialist abroad. The process was quick and hassle-free!"</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card glass">
+                    <img src="https://images.unsplash.com/photo-1537367663815-2250b465702e?auto=format&fit=crop&w=200&q=80" alt="Piere">
+                    <div class="card-text">
+                        <div class="user">🇫🇷 <strong>Piere, France</strong></div>
+                        <p>"Professional doctors and excellent facilities. Made my medical travel seamless."</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card glass">
+                    <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=200&q=80" alt="Aiko">
+                    <div class="card-text">
+                        <div class="user">🇯🇵 <strong>Aiko, Japan</strong></div>
+                        <p>"ElizaCare helped me find the best specialist abroad. The process was quick and hassle-free!"</p>
+                    </div>
+                </div>
+
+                
+                <div class="testimonial-card glass mini">
+                    <p>"The most efficient booking system I've ever used..."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Showcase Section -->
+    <section class="app-showcase">
+        <div class="container flex-row">
+            <!-- Left Content: Promotional Text and Services -->
+            <div class="content-left">
+                <h2 class="promo-title">Fast, Reliable, and <br> Hassle-Free Healthcare!</h2>
+                <p class="promo-subtitle">Book appointments and consult with the best specialists anytime, anywhere—right from your mobile.</p>
+                
+                <div class="store-links">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+                </div>
+
+                <div class="service-box">
+                    <p class="service-intro">Enjoy health services, health information and get specialist doctors according to your needs.</p>
+                    <div class="service-grid">
+                        <div class="service-item active" data-service="Appointment">
+    <i data-lucide="calendar" class="icon"></i>
+    <span class="label">Appointment</span>
+</div>
+
+<div class="service-item" data-service="Room Booking">
+    <i data-lucide="bed-double" class="icon"></i>
+    <span class="label">Room Booking</span>
+</div>
+
+<div class="service-item" data-service="Home Health">
+    <i data-lucide="home" class="icon"></i>
+    <span class="label">Home Health</span>
+</div>
+
+<div class="service-item" data-service="Emergency">
+    <i data-lucide="siren" class="icon"></i>
+    <span class="label">Emergency</span>
+</div>
+
+<div class="service-item" data-service="Hospital Info">
+    <i data-lucide="building-2" class="icon"></i>
+    <span class="label">Info Hospital</span>
+</div>
+
+<div class="service-item" data-service="Check Up">
+    <i data-lucide="stethoscope" class="icon"></i>
+    <span class="label">Check Up</span>
+</div>
+
+<div class="service-item" data-service="Lab Check">
+    <i data-lucide="flask-conical" class="icon"></i>
+    <span class="label">Lab Check</span>
+</div>
+
+<div class="service-item" data-service="Radiology">
+    <i data-lucide="scan-line" class="icon"></i>
+    <span class="label">Radiology</span>
+</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Content: 3D iPhone Model -->
+            <div class="iphone-container">
+    <model-viewer
+    src="iphone.glb"
+    alt="3D iPhone 16"
+    auto-rotate
+    camera-controls
+    disable-zoom
+    disable-pan   <!-- ✅ THIS LINE FIXES YOUR ISSUE -->
+    <camera-orbit="0deg 75deg 2.5m"
+    min-camera-orbit="auto auto 2.5m"
+    max-camera-orbit="auto auto 2.5m"
+    bounds="tight"
+    shadow-intensity="1"
+    interaction-prompt="none">
+</model-viewer>
+
+</div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    </main>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    lucide.createIcons();
+});
+</script>
     <script src="script12.js"></script>
 </body>
 </html>
